@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #ff4e00;
+  --color-surface-dark: #0a0a0a;
+  --color-surface-elevated: #151619;
+  --color-border-subtle: rgba(255, 255, 255, 0.1);
+  --font-mono: "JetBrains Mono", "Roboto Mono", monospace;
+}
+
+:root {
+  --bg: #0a0a0a;
+  --fg: #ffffff;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar for technical dashboard feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* Technical grid background */
+.bg-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+}
+
+/* Anomaly Glow */
+.glow-alert {
+  box-shadow: 0 0 20px rgba(255, 68, 68, 0.2);
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "AI Cold Storage Spoilage Prevention System",
+  "description": "An intelligent cold storage management system using AI for spoilage prediction, shelf-life estimation, and IoT-based monitoring.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["AI Prediction", "IoT Monitoring", "Computer Vision"]
+}
